@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public GameObject textoCanvas;
     public bool pausado = false;
 
+    public int score;
+
     private void iniciaJogo()
     {
         iniciado = true;
@@ -24,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     private void despausaJogo()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 1;
     }
 
 
@@ -39,6 +41,12 @@ public class GameManager : MonoBehaviour
         if (Input.GetButtonDown("Pausar") && pausado == false)
         {
             pausaJogo();
+        }
+
+        if (Input.GetButtonDown("Pausar") && pausado == true)
+        {
+            despausaJogo();
+
         }
     }
 }

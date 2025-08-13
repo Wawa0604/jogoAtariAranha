@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Inimigo : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject gameManager;
 
-    // Update is called once per frame
-    void Update()
+
+    public GameObject vaseFXprefab;
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("vasinho"))
+        {
+            gameManager.GetComponent<GameManager>().score += 1;
+            Debug.Log(gameManager.GetComponent<GameManager>().score);
+
+        }
     }
 }
