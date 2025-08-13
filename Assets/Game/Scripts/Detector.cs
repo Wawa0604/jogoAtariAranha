@@ -18,12 +18,14 @@ public class Detector : MonoBehaviour
     {
         //Instancia o prefab do vasinho
         Instantiate(vasoPrefab, spawnPoint.position, Quaternion.identity);
+        gameObject.transform.GetChild(1).gameObject.SetActive(false);
         //Tocar um som
         gameObject.GetComponent<AudioSource>().Play();
       
         Debug.Log("Derrubou");
         podeDerrubar = false;
         yield return new WaitForSeconds(2f);
+        gameObject.transform.GetChild(1).gameObject.SetActive(true);
         podeDerrubar = true;
         Debug.Log("Reset");
 
