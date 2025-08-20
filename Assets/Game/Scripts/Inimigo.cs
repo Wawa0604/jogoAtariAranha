@@ -6,15 +6,13 @@ public class Inimigo : MonoBehaviour
 {
     public GameObject gameManager;
 
-
-    public GameObject vaseFXprefab;
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("vasinho"))
         {
             gameManager.GetComponent<GameManager>().score += 1;
             Debug.Log(gameManager.GetComponent<GameManager>().score);
+            
 
         }
     }

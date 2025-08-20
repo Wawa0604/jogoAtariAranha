@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2084668194401389024}
   - component: {fileID: 6686294061615287665}
   m_Layer: 0
-  m_Name: AranhaSpawn (1)
+  m_Name: 'AranhaSpawn '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 80c7d9a6ef89aff49938c8bff2580b68, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102,7 +102,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -118,3 +118,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33de9bfbf3e6547e6820a879e0476ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefab: {fileID: 676545437904706616, guid: 91a2da9ff58a3400eb93370c913bbbf8, type: 3}
+  targetPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  spawnInterval: 0.5
+  numberOfPrefabs: 12
+  moveDuration: 2
