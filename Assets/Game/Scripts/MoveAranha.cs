@@ -37,13 +37,13 @@ public class TesteAranha : MonoBehaviour
 
     void Awake()
     {
-        parentObject = GameObject.Find("SpiderSpawn");
+        parentObject = GameObject.Find("AranhaSpawn");
         sorteioAleatorio();
     }
 
     void Start()
     {
-
+        
         // Move até o target em x segundos (pode ajustar)
         StartCoroutine(MoveToTarget(transform, randomChild.position, tempoParaAndar));
     }
