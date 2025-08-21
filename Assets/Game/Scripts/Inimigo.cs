@@ -20,6 +20,9 @@ public class Inimigo : MonoBehaviour
             // Debug.Log(gameManager.GetComponent<GameManager>().score);
             gameObject.GetComponent<SphereCollider>().enabled = false;
             gameObject.GetComponent<MeshRenderer>().enabled = false;
+
+            // Destroy(gameObject);
+
         }
     }
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3744152672735204429}
   - component: {fileID: 769645720340695036}
   - component: {fileID: 8007263000845117076}
+  - component: {fileID: 1389832511731466544}
   m_Layer: 0
   m_Name: Aranha
   m_TagString: Inimigo
@@ -120,3 +121,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 4020182028816645436, guid: e5b4e14cd8d8949e997683ee7b97e750,
     type: 3}
+--- !u!114 &1389832511731466544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676545437904706616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92924170a40ab429e84af73da58eb0e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPos: {fileID: 0}
+  randomChild: {fileID: 0}
+  parentObject: {fileID: 0}
