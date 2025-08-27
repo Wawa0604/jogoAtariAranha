@@ -11,10 +11,37 @@ public class TesteAranha : MonoBehaviour
     public Transform randomChild;
 
     public GameObject parentObject;
+    public GameObject gameManager;
 
     // public Transform[] targetPosTeste;
 
     private float tempoParaAndar = 5f;
+
+    private void OnTriggerEnter(Collider other)
+    {
+      
+
+        if (other.CompareTag("vida"))
+        {
+
+            gameManager.GetComponent<GameManager>().HP -= 1;
+            //gameManager.GetComponent<GameManager>().atualizaScore();
+            gameObject.GetComponent<SphereCollider>().enabled = false;
+            transform.GetChild(0).gameObject.SetActive(false);
+
+            if (gameManager.GetComponent<GameManager>().HP == 0)
+            {
+
+                StartCoroutine(gameManager.GetComponent<GameManager>().gameOver());
+
+            }
+
+
+        }
+
+
+
+    }
 
     private void sorteioAleatorio()
     {
@@ -38,6 +65,7 @@ public class TesteAranha : MonoBehaviour
     void Awake()
     {
         parentObject = GameObject.Find("AranhaSpawn");
+        gameManager = GameObject.Find("GameManager");
         sorteioAleatorio();
     }
 

@@ -5,6 +5,13 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    // variaveis de dificuldade
+
+    public int score;
+
+    public int gameLevel;
+    public int HP = 5;
+
     public bool iniciado = false;
     public GameObject playerGame;
     public GameObject textoCanvas;
@@ -15,7 +22,28 @@ public class GameManager : MonoBehaviour
 
     public GameObject spiderSpamGame;
 
-    public int score;
+    public GameObject gameoverText;
+
+    public IEnumerator gameOver()
+    {
+        //Tela de gameOver
+        gameoverText.SetActive(true);
+        Time.timeScale = 0;
+
+        //Salva high score
+        yield return new WaitForSeconds(3f);
+        //resetar o jogo
+        Time.timeScale = 1;
+        iniciaJogo();
+
+    }
+
+    void resetaJogo()
+    {
+        Time.timeScale = 1;
+
+    }
+
 
     public void atualizaScore()
     {

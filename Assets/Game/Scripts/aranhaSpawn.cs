@@ -13,8 +13,8 @@ public class aranhaSpawn : MonoBehaviour
 
     public GameObject prefab;                    // Prefab a ser instanciado
     public Transform[] targetPoints;             // Alvos possíveis
-    private float spawnInterval = 0.5f;           // Intervalo entre instâncias
-    private int numberOfPrefabs = 12;             // Quantidade total de instâncias
+    private float spawnInterval = 1f;           // Intervalo entre instâncias
+    private int numberOfPrefabs = 10;             // Quantidade total de instâncias
     // private float moveDuration = 2f;              // Tempo de Lerp até o alvo
 
     // public float riseDistance = 10f;
