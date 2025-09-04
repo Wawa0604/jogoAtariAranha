@@ -22,7 +22,7 @@ public class aranhaSpawn : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(SpawnPrefabsCoroutine());
+        //StartCoroutine(SpawnPrefabsCoroutine());
     }
 
     public IEnumerator SpawnPrefabsCoroutine()

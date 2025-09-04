@@ -34,6 +34,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1549968295152019800}
   - {fileID: 5949601650678113936}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -150,6 +151,95 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &1299339682921451187
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2568564158537995671}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4720302
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4720302
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4720302
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.019112261
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.82
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.4471086
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec3246ba09f85144db3bacc31fc295c2,
+        type: 3}
+      propertyPath: m_Name
+      value: Boy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ec3246ba09f85144db3bacc31fc295c2, type: 3}
+--- !u!4 &1549968295152019800 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ec3246ba09f85144db3bacc31fc295c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1299339682921451187}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6132638600673771899
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -212,6 +302,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: megu
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7e751f3902eb845acab23fee4ab9e806,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

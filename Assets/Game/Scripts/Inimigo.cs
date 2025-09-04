@@ -24,5 +24,20 @@ public class Inimigo : MonoBehaviour
             // Destroy(gameObject);
 
         }
+
+        else if (other.CompareTag("vida"))
+        {
+            
+            gameManager.GetComponent<GameManager>().HP -= 1;
+            //gameManager.GetComponent<GameManager>().atualizaScore();
+            gameObject.GetComponent<SphereCollider>().enabled = false;
+            transform.GetChild(0).gameObject.SetActive(false);
+
+            if(gameManager.GetComponent<GameManager>().HP == 0){
+
+                StartCoroutine(gameManager.GetComponent<GameManager>().gameOver());
+            }
+        }
     }
 }
+
